@@ -1,0 +1,45 @@
+.second-page {
+
+  &__illustration {
+    width: 100%;
+    height: auto;
+    max-width: 140vh;
+    margin-top: auto;
+
+    @media screen and (max-width: 1024px) {
+      max-width: 117.31vh;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 100vw;
+      max-width: 52.18vh;
+    }
+  }
+
+  .main-description__title {
+    max-width: 77vh;
+
+    @media screen and (max-width: 1024px) {
+      max-width: none;
+    }
+
+    @media screen and (max-width: 767px) {
+      max-width: 44.33vh;
+    }
+  }
+
+  .main-description__subtitle {
+
+    @media screen and (max-width: 767px) {
+      max-width: 26vh;
+    }
+  }
+
+  .button {
+    margin-bottom: 1.8vh;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0;
+    }
+  }
+}

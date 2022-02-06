@@ -1,0 +1,157 @@
+.last-page {
+
+  &__description {
+    padding: 2.44vh 6.25vh;
+    display: flex;
+    width: 100%;
+    max-width: 41.6vh;
+    background-color: #E4EFCC;
+    border-radius: 1.56vh;
+    font-size: 1.76vh;
+    line-height: 1.5;
+    margin: 2.34vh 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: #6F795B;
+
+    @media screen and (max-width: 1024px) {
+      padding: 2.76vh 8.25vh;
+      max-width: 55.47vh;
+      font-size: 2.34vh;
+      margin: 2.34vh 0;
+    }
+
+    @media screen and (max-width: 767px) {
+      max-width: 42.18vh;
+      font-size: 2.22vh;
+      padding: 2.76vh;
+      margin: 2.96vh 0;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    position: relative;
+    max-width: 28.12vh;
+    color: #989F8A;
+
+    @media screen and (max-width: 1024px) {
+      max-width: 37.5vh;
+    }
+
+    @media screen and (max-width: 767px) {
+      max-width: 35.5vh;
+      order: 99;
+      margin: 2.96vh 0 0.76vh;
+    }
+  }
+
+  &__form-title {
+    font-size: 1.76vh;
+    line-height: 1.5;
+    color: #989F8A;
+    font-weight: 500;
+    margin-bottom: 1.56vh;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 2.34vh;
+      margin-bottom: 1.96vh;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 2.22vh;
+      margin-bottom: 1.85vh;
+    }
+  }
+
+  &__form-input-label {
+    font-weight: 700;
+    font-size: 1.17vh;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 1.56vh;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 1.48vh;
+    }
+  }
+
+  &__form-input {
+    width: 100%;
+    height: 4.68vh;
+    padding: 1.17vh 1.56vh;
+    margin-top: 1.17vh;
+    border: 0.2vh solid #D6D9D0;
+    border-radius: 1.17vh;
+    font-weight: 500;
+    color: #313F14;
+    outline: none;
+    font-size: 1.37vh;
+
+    @media screen and (max-width: 1024px) {
+      height: 6.25vh;
+      padding: 1.17vh 1.96vh;
+      font-size: 1.82vh;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 1.97vh;
+      height: 5.91vh;
+      border-radius: 2.08vh;
+    }
+
+    &::placeholder {
+      opacity: 0.4;
+    }
+
+    &_error {
+      border: 0.2vh solid #b64011;
+    }
+
+    &_completed {
+      background: url(./images/Check.svg) 95% 50% no-repeat;
+    }
+  }
+
+  &__form-error {
+    color: #b64011;
+    text-decoration: none;
+    margin-left: 0.39vh;
+    font-size: 1.36vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 1.56vh;
+      bottom: -0.4vh;
+    }
+  }
+
+  &__illustration {
+    height: 28.6vh;
+    margin-top: auto;
+
+    @media screen and (max-width: 1024px) {
+      height: 21.6vh;
+    }
+  }
+
+  .button {
+    margin: 1.66vh 0;
+
+    @media screen and (max-width: 1024px) {
+      max-width: 37.5vh;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  & + .footer {
+    margin: 1.28vh auto 4.68vh;
+  }
+}

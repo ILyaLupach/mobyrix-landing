@@ -1,0 +1,26 @@
+.admin-page {
+  overflow: hidden;
+  overflow-y: scroll;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  &__list-item {
+    font-size: 2.34vh;
+    margin-bottom: 1.17vh;
+  }
+
+  &__email {
+    font-weight: 500;
+    color: #313F14;
+  }
+
+  &__date {
+    margin-left: 3.22vh;
+    color: #989F8A;
+  }
+}

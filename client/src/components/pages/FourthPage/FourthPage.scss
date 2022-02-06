@@ -1,0 +1,67 @@
+.fourth-page {
+
+  &__illustration-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: auto;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 12.3vh;
+      height: 40.04vh;
+      width: 98vw;
+      max-width: 93.75vh;
+      background: url(./images/Background.png) center center / 100% no-repeat;
+      z-index: -1;
+
+      @media screen and (max-width: 1024px) {
+        bottom: 3.2vh;
+        width: 101.95vh;
+        background-position: center 100%;
+      }
+
+      @media screen and (max-width: 767px) {
+        width: 98vw;
+        max-width: 46.25vh;
+        background: url(./images/Bg-mobile.png) center no-repeat;
+        background-size: 100% auto;
+        bottom: 5vh;
+      }
+    }
+  }
+
+  &__illustration {
+    position: relative;
+    height: 40.14vh;
+    margin-top: auto;
+    margin-bottom: 1.56vh;
+
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 0;
+      height: 33.82vh;
+    }
+  }
+
+  .main-description__title {
+    max-width: 61vh;
+
+    @media screen and (max-width: 1024px) {
+      max-width: 80vh;
+    }
+
+    @media screen and (max-width: 767px) {
+      max-width: 34vh
+    }
+  }
+
+  .main-description__subtitle {
+
+    @media screen and (max-width: 767px) {
+      max-width: 32vh
+    }
+  }
+}

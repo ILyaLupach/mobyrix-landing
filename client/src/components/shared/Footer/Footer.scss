@@ -1,0 +1,54 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  margin: 2.34vh auto 6.25vh;
+
+  @media screen and (max-width: 1024px) {
+    margin: 4.68vh auto;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    max-width: 375px;
+    margin: 3.45vh 0 4.68vh;
+    justify-content: space-between;
+  }
+
+  &__link {
+    opacity: .2;
+    font-size: 1.37vh;
+    font-weight: 500;
+    padding: 0 2.34vh;
+    cursor: pointer;
+    color: #313F14 !important;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 1.82vh;
+    }
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+      white-space: nowrap;
+      font-size: 14px;
+      padding: 0 12px;
+
+      &:first-of-type {
+        padding-left: 0;
+      }
+
+      &:last-of-type {
+        padding-right: 0;
+      }
+    }
+
+    &_bordered {
+      border-right: 0.1vh solid #313F14;
+      border-left: 0.1vh solid #313F14;
+    }
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+}

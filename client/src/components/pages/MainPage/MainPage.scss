@@ -1,0 +1,65 @@
+.main-page {
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 98vw;
+    max-height: 65.43vh;
+    max-width: 124vh;
+    background: url(./images/Background.png) center center no-repeat;
+    background-size: 95% auto;
+    z-index: -1;
+    top: 3.16vh;
+
+    @media screen and (max-width: 1024px) {
+      max-width: 97.39vh;
+      bottom: -12.86vh;
+      top: auto;
+      background-size: 98% auto;
+    }
+
+    @media screen and (max-width: 767px) {
+      max-width: 100%;
+      max-width: 46.25vh;
+      background: url(./images/Background-mobile.png) center no-repeat;
+      background-size: 100% auto;
+      bottom: 5vh;
+    }
+  }
+
+  &__illustration {
+    height: 40.17vh;
+    margin-top: auto;
+
+    @media screen and (max-width: 1024px) {
+      height: 35.55vh;
+    }
+
+    @media screen and (max-width: 767px) {
+      height: 33.62vh;
+      margin: auto;
+    }
+  }
+
+  .main-description__title {
+    max-width: 77vh;
+
+    @media screen and (max-width: 1024px) {
+      max-width: none;
+    }
+
+    @media screen and (max-width: 767px) {
+      max-width: 31.65vh;
+    }
+  }
+
+  .main-description__subtitle {
+
+    @media screen and (max-width: 767px) {
+      max-width: 24vh;
+    }
+  }
+}

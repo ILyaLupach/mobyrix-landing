@@ -1,0 +1,46 @@
+.sixth-page {
+
+  &__illustration {
+    height: auto;
+    width: 100%;
+    max-width: 112.5vh;
+    margin-top: auto;
+
+    @media screen and (max-width: 1024px) {
+      max-width: 86vh;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 96vw;
+      max-width: 52.18vh;
+    }
+  }
+
+  .button {
+    margin-top: 2.2vh;
+  }
+
+  .main-description__title {
+    max-width: 68vh;
+
+    @media screen and (max-width: 1024px) {
+      max-width: 83vh;
+    }
+
+    @media screen and (max-width: 767px) {
+      max-width: 32vh;
+    }
+  }
+
+  .main-description__subtitle {
+    max-width: 72vh;
+
+    @media screen and (max-width: 1024px) {
+      max-width: 90vh;
+    }
+
+    @media screen and (max-width: 767px) {
+      max-width: 42vh;
+    }
+  }
+}
